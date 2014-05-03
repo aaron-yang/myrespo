@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView  android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="程序管理器"
+        android:layout_gravity="center_horizontal" android:textColor="#66ff00" android:textSize="28sp"/>
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/devide_line" />
+     <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+         android:layout_marginTop="5dip">
+         <TextView android:id="@+id/memoryAva" android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:text="内存可用" android:textSize="16sp"/>
+         <TextView  android:id="@+id/sdAva" android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:text="SD卡可用" android:textSize="16sp" android:layout_alignParentRight="true"/>
+     </RelativeLayout>"
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+	    <LinearLayout android:id="@+id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent"
+	        android:gravity="center" android:orientation="vertical" android:visibility="invisible">"
+	        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	        <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在努力加载中。。。"/>
+	    </LinearLayout>
+	    <ListView  android:id="@+id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent"></ListView>
+	</RelativeLayout>
+	
+</LinearLayout>
