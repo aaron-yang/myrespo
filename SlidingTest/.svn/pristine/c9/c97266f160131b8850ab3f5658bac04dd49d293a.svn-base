@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="输入一个密码"
+        android:textColor="#ff565b69"
+        android:textSize="18.0sp" />
+    
+   
+    
+   <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/figureview" android:layout_width="65.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@+id/code1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/love" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/figureview" android:layout_width="65.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@+id/code2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/love" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/figureview" android:layout_width="65.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@+id/code3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/love" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/figureview" android:layout_width="65.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@+id/code4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/love" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/num1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_one" />
+
+            <ImageView
+                android:id="@+id/num2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_two" />
+
+            <ImageView
+                android:id="@+id/num3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_three" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/num4"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_four" />
+
+            <ImageView
+                android:id="@+id/num5"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_five" />
+
+            <ImageView
+                android:id="@+id/num6"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_six" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/num7"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_seven" />
+
+            <ImageView
+                android:id="@+id/num8"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_eight" />
+
+            <ImageView
+                android:id="@+id/num9"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_up"
+                android:scaleType="center"
+                android:src="@drawable/num_nine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/num0"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_down"
+                android:scaleType="center"
+                android:src="@drawable/num_zero" />
+
+            <ImageView
+                android:id="@+id/delect"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_down"
+                android:scaleType="center"
+                android:src="@drawable/delete" />
+
+            <ImageView
+                android:id="@+id/save"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/num_button_down"
+                android:scaleType="center"
+                android:src="@drawable/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

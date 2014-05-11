@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+      <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/label" android:layout_gravity="center" android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name" android:layout_margin="10dp" android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword" android:layout_margin="10dp"/>
+ 
+    <Button android:id="@+id/loginBtn" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/login" android:layout_margin="10dp"/>
+    
+
+</LinearLayout>

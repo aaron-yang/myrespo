@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    name="LoginActivity"
+    default="build" >
+
+    <property file="local.properties" />
+
+    <property file="build.properties" />
+
+    <property environment="env" />
+
+    <condition
+        property="sdk.dir"
+        value="${env.ANDROID_HOME}" >
+
+        <isset property="env.ANDROID_HOME" />
+    </condition>
+
+    <loadproperties srcFile="project.properties" />
+
+    <import file="./custombuild.xml" />
+
+    <target
+        name="build"
+        depends="-set-release-mode, -release-obfuscation-check, -package" >
+        <property name="out.unaligned.file" location="${out.absolute.dir}/${ant.project.name}-release-unaligned.apk" />
+        <echo>Signing  apk...</echo>
+        <signapk
+            alias="${key.alias}"
+            input="${out.packaged.file}"
+            keypass="${key.alias.password}"
+            keystore="${key.store}"
+            output="${out.unaligned.file}"
+            storepass="${key.store.password}" />
+        <zipalign-helper
+            in.package="${out.unaligned.file}"
+            out.package="${out.final.file}" />
+    </target>
+
+</project>

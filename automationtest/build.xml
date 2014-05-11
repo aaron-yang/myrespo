@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LoginActivityTest" default="run_tests" basedir=".">
+
+    <property file="local.properties" />
+    <property file="ant.properties" />
+    <property environment="env" />
+    <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME" />
+    </condition>
+    <loadproperties srcFile="project.properties" />
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+    <path id="emma.lib">
+		<pathelement location="./libs/emma.jar" />
+		<pathelement location="./libs/emma_ant.jar" />
+	</path>
+	<target name="run_tests" depends="release">
+		<exec executable="${sdk.dir}/platform-tools/adb">
+			<arg line=" install ../automation/bin/LoginActivity-release.apk" />
+		</exec>
+		<echo message="Install ${brand_code_name} test app" />
+		<exec executable="${sdk.dir}/platform-tools/adb">
+			<arg line="  install ./bin/LoginActivityTest-release.apk" />
+		</exec>
+		<exec executable="${sdk.dir}/platform-tools/adb">
+			<arg line="  shell am instrument -w -e coverage true -e coverageFile /mnt/sdcard/coverage.ec com.automation.demo.test/com.automation.demo.test.runner.Runner1" />
+		</exec>
+	</target>
+	
+	<target name="generate_xml_report" depends="run_tests">
+		<emma>
+			<report>
+				<infileset dir="/mnt/sdcard/" includes="*.em, *.ec" />
+				<html outfile="/mnt/sdcard/coverage.html" encoding="UTF-8" />
+				<xml outfile="/mnt/sdcard/coverage.xml" encoding="UTF-8" />
+			</report>
+		</emma>
+	</target>
+</project>

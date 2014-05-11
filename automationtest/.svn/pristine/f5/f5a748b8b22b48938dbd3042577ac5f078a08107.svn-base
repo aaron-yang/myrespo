@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutomationtestTest</string>
+	<string name="empty_account_error">Name or password shoule be not empty!</string>
+</resources>

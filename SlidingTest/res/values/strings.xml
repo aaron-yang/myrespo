@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SlidingTest</string>
+    <string name="action_settings">设置</string>
+    <string name="title">SlidingMenu</string>
+    <string name="note">我准备做 ...</string>
+    <string name="save">保存</string>
+    <string name="title_activity_done_item_detail">DoneItemDetailActivity</string>
+    <string name="last_modify">最后修改时间: </string>
+    <string name="back">&lt; 返回</string>
+    <string name="title_activity_edit_done_item">EditDoneItemActivity</string>
+    <string name="editDoneItem">Edit Done Item</string>
+    <string name="cancel">取消</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="status">加锁</string>
+    <string name="title_activity_lock">LockActivity</string>
+    <string name="lock_hint">请输入密码解锁。。。</string>
+    <string name="enter">点击进入</string>
+    <string name="title_activity_set_password">SetPasswordActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoneItemDetailActivity" >
+    
+    <com.slidingtest.widget.TopBar
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+   
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingMultiplier="2"
+        android:textColor="#1E90FF"
+        android:layout_below="@id/topbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/content"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/lastModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/last_modify" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lastModify"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/lastModify" />
+
+</RelativeLayout>

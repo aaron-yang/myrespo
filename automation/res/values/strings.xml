@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">automation</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="label">Welcome</string>
+    <string name="name">Enter your name here</string>
+    <string name="password">Enter your password here</string>
+    <string name="login">Login</string>
+    <string name="title_activity_main">Normal User Activity</string>
+    <string name="title_activity_admin_main">Admin User Activity</string>
+
+</resources>

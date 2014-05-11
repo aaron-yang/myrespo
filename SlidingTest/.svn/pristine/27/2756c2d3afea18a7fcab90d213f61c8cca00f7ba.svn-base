@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fragment_names">
+        <item>任务列表</item>
+        <item>添加任务</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+
+</resources>

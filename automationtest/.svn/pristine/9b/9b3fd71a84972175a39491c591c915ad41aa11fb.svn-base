@@ -1,0 +1,5 @@
+package com.automation.deom.test.utils;
+
+public class CommonValues {
+	public static final long TIMEOUT_5 = 5000;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slidingtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <provider
+            android:name="com.slidingtest.provider.DbProvider"
+            android:authorities="com.slidingtest.provider" />
+
+        <activity
+            android:name="com.slidingtest.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.slidingtest.MainActivity" >
+        </activity>
+        <activity android:name="com.slidingtest.AboutFragment" >
+        </activity>
+        <activity
+            android:name="com.slidingtest.DoneItemDetailActivity"
+            android:label="@string/title_activity_done_item_detail" >
+        </activity>
+        <activity
+            android:name="com.slidingtest.EditDoneItemActivity"
+            android:label="@string/title_activity_edit_done_item" >
+        </activity>
+        <activity
+            android:name="com.slidingtest.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.slidingtest.LockActivity"
+            android:label="@string/title_activity_lock" >
+        </activity>
+        <activity
+            android:name="com.slidingtest.SetPasswordActivity"
+            android:label="@string/title_activity_set_password" >
+        </activity>
+    </application>
+
+</manifest>
