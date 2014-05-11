@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    
+    <EditText android:inputType="text" android:id="@+id/context" android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+    
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	    <Button  android:id="@+id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存入文件"/>
+	    <Button  android:id="@+id/saveAndAppend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附加存入"/>
+	    <Button  android:id="@+id/open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="读取"/>
+	</LinearLayout>
+	<TextView android:id="@+id/label" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

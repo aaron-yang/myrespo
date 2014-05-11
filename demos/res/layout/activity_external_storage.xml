@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/savePrivate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存储为私有"/>
+    	<Button android:id="@+id/savePublic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存储为公开"/>
+    </LinearLayout>
+    <TextView android:id="@+id/label2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ja" android:contentDescription="Japan"/>
+</LinearLayout>

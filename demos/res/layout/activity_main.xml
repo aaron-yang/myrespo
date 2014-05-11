@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    
+  <Button android:id="@+id/internalStorage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="内部存储实例"/>
+  <Button android:id="@+id/externalStorage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="外部存储实例"/>
+  <Button android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="webview实例"/>
+  <Button android:id="@+id/optionsMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OptionsMenu实例"/>
+  <Button android:id="@+id/notification" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Notification实例"/>
+  <Button android:id="@+id/mediaplayer1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MediaPlayer播放资源文件实例"/>
+  <Button android:id="@+id/mediaplayer2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MediaPlayer播放网络文件实例"/>
+  <Button android:id="@+id/smsPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="短信电话监控实例"/>
+</LinearLayout>

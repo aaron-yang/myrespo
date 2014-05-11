@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/playFromSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放SD" />
+
+    <Button
+        android:id="@+id/playFromURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放自网络" />
+
+    <Button
+        android:id="@+id/stop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止" />
+
+</LinearLayout>
