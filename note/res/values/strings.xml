@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">note</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="email_et">Type your email here</string>
+    <string name="password_et">Type your password here</string>
+    <string name="login_btn">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="add_note">Add</string>
+    <string name="normal_user">Normal User</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <string name="save_note">Save</string>
+    <string name="add_note_title">Add Note</string>
+    <string name="hint_note_subject">Note subject</string>
+     <string name="hint_note_detail">Start to add note</string>
+
+</resources>
