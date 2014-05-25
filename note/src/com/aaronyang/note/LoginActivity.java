@@ -40,7 +40,11 @@ public class LoginActivity extends Activity {
 					startActivity(intent);
 					LoginActivity.this.finish();
 				}else{
-					Toast.makeText(getApplicationContext(), "Email or password is not match!", Toast.LENGTH_LONG).show();
+					if("".equals(emailET.getText().toString()) || "".equals(passwordET.getText().toString())){
+						Toast.makeText(getApplicationContext(), "Email or password can not be empty!", Toast.LENGTH_LONG).show();
+					}else{
+						Toast.makeText(getApplicationContext(), "Email or password is not match!", Toast.LENGTH_LONG).show();
+					}
 				}
 				
 			}

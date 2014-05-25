@@ -6,6 +6,9 @@ import com.automation.demo.test.OrderedTestSuite;
 import com.automation.demo.test.testsuite.TestSuite1;
 
 public class Runner1 extends CustomRunner {
+	/**
+	 * add suites to runner
+	 */
     @Override
     public TestSuite getAllTests() {
         OrderedTestSuite customSuite = new OrderedTestSuite();
